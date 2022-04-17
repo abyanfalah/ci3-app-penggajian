@@ -8,10 +8,13 @@
 
 		public function get($id = null)
 		{
-			$query = "SELECT * FROM $this->table p INNER JOIN akses a ON p.level_akses = a.level";
+			$query = "
+				SELECT *, a.nama AS 'akses' 
+				FROM $this->table p INNER JOIN akses a 
+				ON p.level_akses = a.level";
 			
 			if ($id) {
-				$query .= " WHERE id = '$id'";
+				$query .= " WHERE id = '".$id."'";
 			}
 
 			return $this->db->query($query);

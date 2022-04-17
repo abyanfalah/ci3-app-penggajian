@@ -1,0 +1,523 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fore",
+				"foreach"
+			],
+			[
+				"vardum",
+				"var_dump()"
+			],
+			[
+				"vard",
+				"var_dump()"
+			],
+			[
+				"_SES",
+				"_SESSION"
+			],
+			[
+				"_SE",
+				"$_SESSION"
+			],
+			[
+				"var",
+				"var_dump()"
+			],
+			[
+				"vardu",
+				"var_dump()"
+			],
+			[
+				"pos",
+				"$_POST"
+			],
+			[
+				"substr",
+				"substr()"
+			],
+			[
+				"clas",
+				"class"
+			],
+			[
+				"con",
+				"Content-type"
+			],
+			[
+				"swit",
+				"switch"
+			],
+			[
+				"JSON",
+				"json_encode()"
+			],
+			[
+				"onke",
+				"onkeypress"
+			],
+			[
+				"show",
+				"show_404"
+			],
+			[
+				"for",
+				"foreach"
+			],
+			[
+				"foreac",
+				"foreach"
+			],
+			[
+				"fu",
+				"fun"
+			],
+			[
+				"strle",
+				"strlen()"
+			],
+			[
+				"_",
+				"$_POST"
+			],
+			[
+				"C",
+				"CI_Controller"
+			],
+			[
+				"ci",
+				"CI_Controller"
+			],
+			[
+				"li",
+				"li"
+			],
+			[
+				"arr",
+				"array()"
+			],
+			[
+				"statu",
+				"statusCode"
+			],
+			[
+				"ar",
+				"array()"
+			],
+			[
+				"jso",
+				"json_encode()"
+			],
+			[
+				"stat",
+				"statusCode"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"bos",
+				"box-shadow"
+			],
+			[
+				"bod",
+				"border-style"
+			],
+			[
+				"ht",
+				"html"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"to",
+				"tbody"
+			],
+			[
+				"PH",
+				"php"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"anie",
+				"anime_model"
+			],
+			[
+				"session",
+				"session_destroy"
+			],
+			[
+				"user",
+				"USER"
+			],
+			[
+				"USE",
+				"username"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"te",
+				"text-center"
+			],
+			[
+				"lis",
+				"list-style\tproperty"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"paddi",
+				"padding-left\tproperty"
+			],
+			[
+				"se",
+				"select\tTag"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"blo",
+				"block\tdisplay"
+			],
+			[
+				"blok",
+				"inline-block\tdisplay"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"head",
+				"header\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/abyan/portofolio/app_penggajian",
+		"/home/abyan/portofolio/app_penggajian/application"
+	],
+	"file_history":
+	[
+		"/home/abyan/portofolio/app_penggajian/application/views/login.php",
+		"/home/abyan/portofolio/app_penggajian/application/views/404.php",
+		"/home/abyan/portofolio/app_penggajian/application/controllers/Template.php",
+		"/home/abyan/portofolio/app_penggajian/application/config/autoload.php",
+		"/home/abyan/portofolio/app_penggajian/application/controllers/Test.php",
+		"/home/abyan/portofolio/app_penggajian/application/config/database.php",
+		"/home/abyan/portofolio/app_penggajian/application/models/Pegawai_model.php",
+		"/home/abyan/www/warungporto/js/simulasi.js",
+		"/home/abyan/www/warungporto/application/controllers/api/Barang.php",
+		"/home/abyan/www/warungporto/application/config/routes.php",
+		"/home/abyan/www/warungporto/application/models/Barang_model.php",
+		"/home/abyan/www/warungporto/application/views/barang/mini_list.php",
+		"/home/abyan/www/warungporto/application/controllers/Barang.php",
+		"/home/abyan/www/warungporto/application/models/Transaksi_model.php",
+		"/home/abyan/www/warungporto/application/controllers/Transaksi.php",
+		"/home/abyan/www/warungporto/application/controllers/Index.php",
+		"/home/abyan/www/warungporto/application/views/templates/header.php",
+		"/home/abyan/www/warungporto/application/views/templates/footer.php",
+		"/home/abyan/www/warungporto/application/views/transaksi_simulasi.php",
+		"/home/abyan/www/warungporto/application/models/templates/Cobadata_model.php",
+		"/home/abyan/www/warungporto/application/views/barang/edit.php",
+		"/home/abyan/www/warungporto/application/views/index.php",
+		"/home/abyan/www/warungporto/application/views/barang.php",
+		"/home/abyan/www/warungporto/application/views/barang/add.php",
+		"/home/abyan/www/warungporto/application/views/barang/delete.php",
+		"/home/abyan/www/warungporto/application/views/user/delete.php",
+		"/home/abyan/www/warungporto/application/controllers/User.php",
+		"/home/abyan/www/warungporto/application/views/user/add.php",
+		"/home/abyan/www/warungporto/application/models/User_model.php",
+		"/home/abyan/www/warungporto/application/views/user.php",
+		"/home/abyan/www/warungporto/application/views/user/edit.php",
+		"/home/abyan/www/warungporto/application/controllers/Auth.php",
+		"/home/abyan/www/warungporto/application/views/templates/testpage.php",
+		"/home/abyan/www/warungporto/application/views/login.php",
+		"/home/abyan/www/warungporto/application/config/config.php",
+		"/home/abyan/www/warungporto/application/controllers/Template.php",
+		"/home/abyan/www/warungporto/application/controllers/index.html",
+		"/var/www/html/application/models/templates/Cobadata_model.php",
+		"/var/www/html/application/controllers/Template.php",
+		"/var/www/html/application/models/User_model.php",
+		"/var/www/html/application/controllers/User.php",
+		"/var/www/html/.htaccess",
+		"/var/www/html/application/config/config.php",
+		"/var/www/html/application/config/autoload.php",
+		"/var/www/html/application/config/database.php",
+		"/var/www/html/application/config/routes.php",
+		"/var/www/html/skema database",
+		"/home/abyan/www/latboot/style.css",
+		"/home/abyan/www/latboot/script.js",
+		"/home/abyan/www/latboot/index.html",
+		"/home/abyan/www/stuff/ci.templates/templateci3/bootstrap/bootstrap.min.js",
+		"/home/abyan/www/stuff/ci.templates/templateci3/bootstrap/jquery.min.js",
+		"/home/abyan/www/ajax/crud/database.php",
+		"/home/abyan/www/ajax/crud/view.php",
+		"/home/abyan/www/ajax/crud/index.php",
+		"/home/abyan/www/ajax/crud/seria.php",
+		"/home/abyan/www/ajax/crud/jquery.min.js",
+		"/home/abyan/www/apotek/application/config/database.php",
+		"/home/abyan/www/apotek/application/config/routes.php",
+		"/home/abyan/www/weebpage/application/controllers/templates/Template.php",
+		"/home/abyan/www/weebpage/application/models/Anime_model.php",
+		"/home/abyan/www/weebpage/application/controllers/Index.php",
+		"/home/abyan/www/weebpage/application/views/templates/native_test.php",
+		"/home/abyan/www/Considering this, what is a multivalued attribute.txt",
+		"/home/abyan/www/weebpage/application/views/index.php",
+		"/home/abyan/www/weebpage/application/config/routes.php",
+		"/home/abyan/www/weebpage/application/views/templates/header.php",
+		"/home/abyan/www/weebpage/application/views/templates/testpage.php",
+		"/home/abyan/www/apotek/apotek/page/stock.php",
+		"/home/abyan/www/apotek/apotek/libs/koneksi.php",
+		"/home/abyan/www/weebpage/application/views/list.php",
+		"/home/abyan/www/weebpage/application/controllers/Login.php",
+		"/home/abyan/www/weebpage/application/config/autoload.php",
+		"/home/abyan/www/pkadmin/application/controllers/admin/Dashboard.php",
+		"/home/abyan/www/pkadmin/application/controllers/admin/Flash.php",
+		"/home/abyan/www/pkadmin/assets/css/admin.css",
+		"/home/abyan/www/pkadmin/application/views/admin/_partials/side_nav.php",
+		"/home/abyan/www/pkadmin/application/config/config.php",
+		"/home/abyan/www/pkadmin/application/config/routes.php",
+		"/home/abyan/www/pkadmin/application/controllers/admin/Post.php",
+		"/home/abyan/www/pkadmin/application/controllers/admin/Feedback.php",
+		"/home/abyan/www/pkadmin/application/controllers/admin/Setting.php",
+		"/home/abyan/www/weebpage/application/models/User_model.php",
+		"/home/abyan/www/weebpage/application/views/default.php",
+		"/home/abyan/www/weebpage/application/controllers/Logout.php",
+		"/home/abyan/www/weebpage/application/controllers/Anime.php",
+		"/home/abyan/www/weebpage/application/views/login.php",
+		"/home/abyan/www/weebpage/application/config/database.php",
+		"/home/abyan/www/templateci3/application/controllers/Login.php",
+		"/home/abyan/www/templateci3/application/views/login.php",
+		"/home/abyan/www/templateci3/application/views/index.php",
+		"/home/abyan/www/templateci3/application/config/routes.php",
+		"/home/abyan/www/templateci3/application/controllers/Index.php",
+		"/home/abyan/www/templateci3/application/controllers/templates/Template.php",
+		"/home/abyan/www/templateci3/application/models/templates/Cobadata_model.php",
+		"/home/abyan/www/templateci3/application/config/database.php",
+		"/home/abyan/www/[]stuff/CI templates/ci3 template/application/controllers/Index.php",
+		"/home/abyan/www/[]stuff/CI templates/ci3 template/application/controllers/templates/Template.php",
+		"/home/abyan/www/[]stuff/CI templates/ci3 template/application/config/constants.php",
+		"/home/abyan/www/[]stuff/CI templates/ci3 template/application/config/config.php",
+		"/home/abyan/www/[]stuff/CI templates/ci3 template/application/config/routes.php",
+		"/home/abyan/www/[]stuff/CI templates/ci3 template/application/controllers/templates/cobadata.php",
+		"/home/abyan/www/[]stuff/CI templates/ci3 template/application/views/templates/header.php",
+		"/home/abyan/www/[]stuff/CI templates/ci3 template/application/views/templates/col.php",
+		"/home/abyan/www/[]stuff/CI templates/ci3 template/application/views/index.php",
+		"/home/abyan/www/[]stuff/CI templates/ci3 template/application/controllers/templates/default-controller.php",
+		"/home/abyan/www/[]stuff/CI templates/ci3 template/application/config/database.php",
+		"/home/abyan/www/weebpage/index.php",
+		"/home/abyan/www/weebpage/css/style.css",
+		"/home/abyan/www/weebpage/pages/home.php",
+		"/home/abyan/www/weebpage/router.php",
+		"/home/abyan/www/weebpage/config.php",
+		"/home/abyan/www/siswa2/list-siswa.php",
+		"/home/abyan/www/siswa2/proses-edit.php",
+		"/home/abyan/www/siswa2/form-edit.php",
+		"/home/abyan/www/siswa2/proses-daftar.php",
+		"/home/abyan/www/siswa2/hapus.php",
+		"/home/abyan/www/siswa2/config.php",
+		"/home/abyan/www/siswa2/form-daftar.php",
+		"/home/abyan/www/siswa2/index.php",
+		"/home/abyan/www/pendaftaran_siswa/config.php",
+		"/home/abyan/www/pendaftaran_siswa/hapus.php",
+		"/home/abyan/www/pendaftaran_siswa/proses-edit.php",
+		"/home/abyan/www/pendaftaran_siswa/form-edit.php",
+		"/home/abyan/www/pendaftaran_siswa/list-siswa.php",
+		"/home/abyan/www/pendaftaran_siswa/proses-daftar.php",
+		"/home/abyan/www/pendaftaran_siswa/form-daftar.php",
+		"/var/www/html/pendaftaran_siswa/config.php"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "app_penggajian.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 252.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 192.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

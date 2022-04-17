@@ -55,7 +55,9 @@
             $userdata = $this->pegawai_model->get($id)->row_array();
             $this->session->set_userdata($userdata);
 
-            header('location:/dashboard');
+            return header('location:/dashboard');
+            // var_dump($this->session->userdata);
+            // header('Content-Type: application/json');
         }
 
 

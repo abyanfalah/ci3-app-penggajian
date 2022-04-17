@@ -1,6 +1,6 @@
 <?php
 
-    class Template extends CI_Controller
+    class Index extends CI_Controller
     {
         function __construct()
         {
@@ -17,7 +17,6 @@
 
         public function not_found()
         {
-
             $this->load->view('templates/header');
             $this->load->view('templates/sidebar');
             $this->load->view('404');
