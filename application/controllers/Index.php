@@ -15,19 +15,15 @@
             $this->load->view('templates/footer');
         }
 
-        public function blank()
+        public function not_found()
         {
+
             $this->load->view('templates/header');
             $this->load->view('templates/sidebar');
-            $this->load->view('templates/blank');
+            $this->load->view('404');
             $this->load->view('templates/footer');
         }
 
 
-        public function also()
-        {
-            // $this->index();
-            header('location:/template');
-        }
     }
     
