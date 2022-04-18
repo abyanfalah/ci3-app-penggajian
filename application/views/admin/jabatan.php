@@ -68,3 +68,16 @@
 
             </div>
             <!-- End of Main Content -->
+
+
+            <!-- MODAL DELETE -->
+           <!--  <div class="modal fade" id="modalDelete">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            this is modal delete
+                        </div>
+                    </div>
+                </div>
+            </div>
+ -->

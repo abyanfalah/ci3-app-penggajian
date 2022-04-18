@@ -34,13 +34,13 @@
 
             $this->load->view($this->access.'/_partials/header', $data);
             $this->load->view($this->access.'/_partials/sidebar');
-            $this->load->view($this->access.'/jabatan/tambah');
+            $this->load->view($this->access.'/jabatan/create');
             $this->load->view($this->access.'/_partials/footer');
         }
 
         public function edit($id = null)
         {
-            if (!$id) { return redirect(base_url('dashboard')); }
+            if (!$id) { return redirect(base_url('jabatan')); }
 
             $data['title'] = 'edit jabatan '.$id;
             $data['jabatan'] = $this->jabatan_model->get($id)->row();
@@ -49,8 +49,20 @@
             $this->load->view($this->access.'/_partials/sidebar');
             $this->load->view($this->access.'/jabatan/edit', $data);
             $this->load->view($this->access.'/_partials/footer');
+        }
 
-            // var_dump($data['jabatan']->row());
+         public function hapus($id = null)
+        {
+            if (!$id) { return redirect(base_url('jabatan')); }
+
+            $data['title'] = 'edit jabatan '.$id;
+            $data['jabatan'] = $this->jabatan_model->get($id)->row();
+
+            $this->load->view($this->access.'/_partials/header', $data);
+            $this->load->view($this->access.'/_partials/sidebar');
+            $this->load->view($this->access.'/jabatan/delete', $data);
+            $this->load->view($this->access.'/_partials/footer');
+
         }
 
 
