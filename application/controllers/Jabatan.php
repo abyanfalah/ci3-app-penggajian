@@ -27,6 +27,16 @@
             $this->load->view($this->access.'/_partials/footer');
         }
 
+        public function tambah()
+        {
+            $data['title'] = 'jabatan baru';
+
+            $this->load->view($this->access.'/_partials/header', $data);
+            $this->load->view($this->access.'/_partials/sidebar');
+            $this->load->view($this->access.'/jabatan/tambah');
+            $this->load->view($this->access.'/_partials/footer');
+        }
+
 
     }
     

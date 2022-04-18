@@ -11,6 +11,12 @@
                    
                     <!-- content below here -->
                     
+                    <div class="row">
+                        <div class="card col p-3">
+                            
+                        </div>
+                    </div>
+
                     <h1>dis is content</h1>
 
 

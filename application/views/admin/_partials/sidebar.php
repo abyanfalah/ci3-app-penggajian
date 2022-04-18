@@ -141,7 +141,13 @@ Addons
         <i class="fa fa-bars"></i>
     </button>
 
-    <a href="<?php echo base_url('/dashboard'); ?>" class="navbar-brand"><?php echo ucwords($title); ?></a>
+    <?php 
+        if (isset($title)) {
+    ?>
+        <a href="<?php echo base_url('/dashboard'); ?>" class="navbar-brand"><?php echo ucwords($title); ?></a>
+    <?php 
+        }
+    ?>
 
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">

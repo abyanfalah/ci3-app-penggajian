@@ -1,6 +1,6 @@
 <?php
 
-    class Index extends CI_Controller
+    class Jabatan extends CI_Controller
     {
         function __construct()
         {
