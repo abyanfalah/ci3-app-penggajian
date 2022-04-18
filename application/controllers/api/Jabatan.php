@@ -73,5 +73,34 @@
         }
 
 
+        public function delete($id = null)
+        {
+            if (! $id) return false;
+
+            if ($this->jabatan_model->delete($id)) {
+                $status = 201;
+                $message = 'Jabatan $id berhasil dihapus';
+            }else{
+                $status = 500;
+                $message = 'Jabatan $id gagal dihapus';
+                die(json_encode([
+                    "status" => $status,
+                    "message" => $message
+                ]));
+            }
+
+            $res = [
+                    "status" => $status,
+                    "message" => $message
+                ];
+
+            $this->session->set_flashdata('msg', $message);
+            echo json_encode($res);
+            redirect(base_url('jabatan'));
+
+
+        }
+
+
     }
     

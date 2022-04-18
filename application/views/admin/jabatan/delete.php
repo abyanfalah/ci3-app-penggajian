@@ -23,7 +23,7 @@
 									<p>Yakin tetap hapus?</p>
 								</div>
 								<div class="card-footer">
-									<a class="btn btn-danger px-5" href="<?php echo base_url('jabatan/api/delete/').$jabatan->id; ?>"><strong>Ya</strong></a>
+									<a class="btn btn-danger px-5" href="<?php echo base_url('api/jabatan/delete/').$jabatan->id; ?>"><strong>Ya</strong></a>
 
 									<a class="btn btn-primary px-5" href="<?php echo base_url('jabatan'); ?>">Tidak</a>
 								</div>

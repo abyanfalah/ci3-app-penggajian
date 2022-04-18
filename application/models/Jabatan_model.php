@@ -31,7 +31,7 @@
 			if (! $id) return false;
 
 			$data = [
-				"id" => $this->input->post('id'),
+				"id" => $this->sanitize($this->input->post('id')),
 				"nama" => $this->input->post('nama'),
 				"gaji_pokok" => $this->input->post('gaji_pokok'),
 				"tunjangan" => $this->input->post('tunjangan')
@@ -39,6 +39,12 @@
 
 			return $this->db->update($this->table, $data, ["id" => $id]);
 
+		}
+
+		public function delete($id = null)
+		{
+			if (! $id) return false;
+			return $this->db->delete($this->table, ["id" => $id]);
 		}
 
 
@@ -70,6 +76,15 @@
 		private function new_id()
 		{
 			$id = $this->input->post('id');
+			$id = str_replace(" ", "", $id); 
+			$id = strtoupper($id);
+			$id = trim($id);
+
+			return $id;
+		}
+
+		private function sanitize($id)
+		{
 			$id = str_replace(" ", "", $id); 
 			$id = strtoupper($id);
 			$id = trim($id);
