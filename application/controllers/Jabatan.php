@@ -12,6 +12,7 @@
             }
 
             $this->access = $this->session->userdata('akses');
+            $this->load->model('jabatan_model');
         }
 
         private $access;
@@ -35,6 +36,21 @@
             $this->load->view($this->access.'/_partials/sidebar');
             $this->load->view($this->access.'/jabatan/tambah');
             $this->load->view($this->access.'/_partials/footer');
+        }
+
+        public function edit($id = null)
+        {
+            if (!$id) { return redirect(base_url('dashboard')); }
+
+            $data['title'] = 'edit jabatan '.$id;
+            $data['jabatan'] = $this->jabatan_model->get($id)->row();
+
+            $this->load->view($this->access.'/_partials/header', $data);
+            $this->load->view($this->access.'/_partials/sidebar');
+            $this->load->view($this->access.'/jabatan/edit', $data);
+            $this->load->view($this->access.'/_partials/footer');
+
+            // var_dump($data['jabatan']->row());
         }
 
 

@@ -14,12 +14,12 @@
                     <div class="row">
                         <div class="card p-3 col">
                             <div class="row">
-                                <h3 class="col">Tabel Jabatan</h3>
+                                <h3 class="col">Data Jabatan</h3>
                                 <div class="col text-right">
                                     <a class="btn btn-success" href="<?php echo base_url("jabatan/tambah") ?>"><i class="fas fa-plus text-white"></i> Tambah jabatan</a>
                                 </div>
                             </div>
-                            <table class="table table-borderless">
+                            <table class="table table-borderless table-striped">
                                 <thead>
                                     <tr>
                                         <th>#</th>
@@ -27,7 +27,7 @@
                                         <th>Nama</th>
                                         <th>Gaji Pokok</th>
                                         <th>Tunjangan</th>
-                                        <th colspan="2" class="text-center">Opsi</th>
+                                        <th class="text-center">Opsi</th>
 
                                     </tr>
                                 </thead>
@@ -37,11 +37,21 @@
                                     $counter = 1;
                                     foreach($jabatan as $j): ?>
                                     <tr>
-                                        <th><?php echo $counter++; ?></th>
-                                        <th><?php echo $j->id; ?></th>
-                                        <th><?php echo $j->nama; ?></th>
-                                        <th>Rp. <?php echo number_format($j->gaji_pokok); ?></th>
-                                        <th>Rp. <?php echo number_format($j->tunjangan); ?></th>
+                                        <td><?php echo $counter++; ?></td>
+                                        <td><?php echo $j->id; ?></td>
+                                        <td><?php echo ucwords($j->nama); ?></td>
+                                        <td>Rp. <?php echo number_format($j->gaji_pokok); ?></td>
+                                        <td>Rp. <?php echo number_format($j->tunjangan); ?></td>
+
+                                        <td class="text-center">
+                                            <a class="btn btn-sm text-center btn-primary text-white" href="<?php echo base_url('jabatan/edit/').$j->id; ?>">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+
+                                            <a class="btn btn-sm text-center btn-danger text-white" href="<?php echo base_url('jabatan/hapus/').$j->id; ?>">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                 <?php endforeach; ?>
                                 </tbody>
