@@ -5,26 +5,31 @@
         function __construct()
         {
             parent::__construct();
-            $this->access = $this->session->userdata('akses');
+            $this->load->model('jabatan_model');
 
         }
 
         private $access;
 
-        public function index()
+     
+        public function tambah()
         {
-            $this->load->view('templates/header');
-            $this->load->view('templates/sidebar');
-            $this->load->view('templates/content');
-            $this->load->view('templates/footer');
-        }
+            if ($this->jabatan_model->create()) {
+                $status = 201;
+                $message = 'Jabatan baru berhasil dibuat';
+            }else{
+                $status = 500;
+                $message = 'Jabatan gagal dibuat';
+            }
 
-        public function not_found()
-        {
-            $this->load->view($this->access.'/_partials/header');
-            $this->load->view($this->access.'/_partials/sidebar');
-            $this->load->view('404');
-            $this->load->view($this->access.'/_partials/footer');
+            $res = [
+                    "status" => $status,
+                    "message" => $message
+                ];
+
+            $this->session->set_flashdata('msg', $message);
+            echo json_encode($res);
+
         }
 
 

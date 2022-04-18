@@ -13,8 +13,15 @@
 					
 					<div class="row d-flex justify-content-center">
 						<div class="card col-5 p-5 shadow">
-							<form method="post" action="api/jabatan/tambah">
+							<form method="post" action="<?php echo base_url('api/jabatan/tambah') ?>">
 								<h3>Informasi jabatan baru</h3>
+
+								<div class="form-group">
+									<label for="id">ID jabatan (gunakan singkatan)</label>
+									<input class="form-control" type="text" name="id">
+									<sub class="text-grey">id akan menjadi kapital setelah disimpan</sub><br>
+									<sub class="text-grey">spasi akan terhapus setelah disimpan</sub>
+								</div>
 
 								<div class="form-group">
 									<label for="nama">Nama jabatan</label>
