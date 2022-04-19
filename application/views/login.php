@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Aplikasi Penggajian | Login</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?php echo base_url('assets/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -25,6 +25,13 @@
     <div id="wrapper" class="bg-primary vh-100 d-flex justify-content-center align-items-center">
         <div class="row">
             <div class="col">
+                <?php 
+                    if ($message = $this->session->flashdata('alert')) {
+                ?>
+                        <div class="alert alert-danger alert-dismissable fade show text-center"><?php echo $message; ?> <button class="close text-danger" data-dismiss="alert">&times;</button></div>
+                <?php
+                    }
+                ?>
                 <div class="card bg-white">
                     <div class="card-body">
                         <h3 class="mb-3">Login</h3>

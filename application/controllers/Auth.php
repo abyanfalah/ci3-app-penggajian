@@ -13,7 +13,6 @@
                 return header('location:/');
             }
 
-            echo $this->session->flashdata('alert');
             $this->load->view('login');
 
         }
