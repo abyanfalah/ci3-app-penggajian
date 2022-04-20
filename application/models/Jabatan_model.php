@@ -49,28 +49,28 @@
 
 
 
-		public function rules()
-		{
-		    return [
-				['field' => 'id',
-				'label' => 'ID',
-				'rules' => 'required'],
+		// public function rules()
+		// {
+		//     return [
+		// 		['field' => 'id',
+		// 		'label' => 'ID',
+		// 		'rules' => 'required'],
 
-				['field' => 'nama',
-				'label' => 'Nama',
-				'rules' => 'required'],
+		// 		['field' => 'nama',
+		// 		'label' => 'Nama',
+		// 		'rules' => 'required'],
 
-				['field' => 'gaji_pokok',
-				'label' => 'Gaji pokok',
-				'rules' => 'required'],
+		// 		['field' => 'gaji_pokok',
+		// 		'label' => 'Gaji pokok',
+		// 		'rules' => 'required'],
 
-				['field' => 'tunjangan',
-				'label' => 'Tunjangan',
-				'rules' => 'required'],
+		// 		['field' => 'tunjangan',
+		// 		'label' => 'Tunjangan',
+		// 		'rules' => 'required'],
 
 				
-		    ];
-		}
+		//     ];
+		// }
 
 
 		private function new_id()

@@ -9,7 +9,7 @@
 		public function get($id = null)
 		{
 			$query = "
-				SELECT *, a.nama AS 'akses' 
+				SELECT p.*, a.nama as 'akses' 
 				FROM $this->table p INNER JOIN akses a 
 				ON p.level_akses = a.level";
 			
@@ -25,16 +25,38 @@
 			$data = [
 				'id' => $this->new_id(),
 				'nik' => $this->input->post('nik'),
+				'nama' => $this->input->post('nama'),
 				'username' => $this->input->post('username'),
 				'password' => sha1($this->input->post('password')),
+				'id_jabatan' => $this->input->post('id_jabatan'),
+				'level_akses' => $this->input->post('level_akses'),
+				'jenis_kelamin' => $this->input->post('jenis_kelamin'),
+				'tanggal_masuk' => $this->input->post('tanggal_masuk'),
+				'id_status' => 1,
+				'foto' => $this->input->post('nama').'jpg'
+			];
+
+			return $this->db->insert($this->table, $data);
+		}
+
+		public function update()
+		{
+			$data = [
+				'nik' => $this->input->post('nik'),
 				'nama' => $this->input->post('nama'),
+				'username' => $this->input->post('username'),
+				'password' => sha1($this->input->post('password')),
+				'id_jabatan' => $this->input->post('id_jabatan'),
+				'level_akses' => $this->input->post('level_akses'),
 				'jenis_kelamin' => $this->input->post('jenis_kelamin'),
 				'tanggal_masuk' => $this->input->post('tanggal_masuk'),
 				'id_status' => $this->input->post('id_status'),
 				'foto' => $this->input->post('nama').'jpg'
 			];
 
-			return $this->db->insert($this->table, $data);
+			return $this->db->update($this->table, $data, ["id" => $this->input->post('id')]);
+
+
 		}
 
 		public function check_username()
@@ -51,7 +73,7 @@
 		public function new_id()
 		{
 			$id = 'P001';
-			$last = $this->db->query("SELECT id FROM $this->table ORDER BY id DESC LIMIT 1")->result();
+			$last = $this->db->query("SELECT id FROM $this->table ORDER BY id DESC LIMIT 1")->row();
 			
 			if(!$last){
 				return $id;
@@ -63,7 +85,29 @@
 
 				return $new;
 			}
-
-
 		}
+
+
+		// public function rules()
+			// {
+			//     return [
+			// 		['field' => 'id',
+			// 		'label' => 'ID',
+			// 		'rules' => 'required'],
+
+			// 		['field' => 'nama',
+			// 		'label' => 'Nama',
+			// 		'rules' => 'required'],
+
+			// 		['field' => 'gaji_pokok',
+			// 		'label' => 'Gaji pokok',
+			// 		'rules' => 'required'],
+
+			// 		['field' => 'tunjangan',
+			// 		'label' => 'Tunjangan',
+			// 		'rules' => 'required'],
+
+					
+			//     ];
+		// }
 	}

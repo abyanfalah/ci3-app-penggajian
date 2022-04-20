@@ -50,13 +50,10 @@
             }
 
             $id = $this->pegawai_model->authenticate()->row()->id;
-
             $userdata = $this->pegawai_model->get($id)->row_array();
+            $this->session->set_flashdata('alert', 'Selamat datang '.ucwords($userdata['nama']).' !');
             $this->session->set_userdata($userdata);
-
             return header('location:/dashboard');
-            // var_dump($this->session->userdata);
-            // header('Content-Type: application/json');
         }
 
 

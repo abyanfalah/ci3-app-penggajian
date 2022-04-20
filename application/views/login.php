@@ -28,7 +28,7 @@
                 <?php 
                     if ($message = $this->session->flashdata('alert')) {
                 ?>
-                        <div class="alert alert-danger alert-dismissable fade show text-center"><?php echo $message; ?> <button class="close text-danger" data-dismiss="alert">&times;</button></div>
+                        <div class="col-6 alert alert-danger alert-dismissable fade show text-center"><?php echo $message; ?> <button class="close text-danger" data-dismiss="alert">&times;</button></div>
                 <?php
                     }
                 ?>

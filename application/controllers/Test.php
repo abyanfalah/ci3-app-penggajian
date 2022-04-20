@@ -5,14 +5,12 @@
         function __construct()
         {
             parent::__construct();
+            $this->load->model('pegawai_model');
         }
 
-        public function index()
+        public function index($id)
         {
-
-            // $this->load->view('test');
-
-            echo trim('asdfasdsf asdfasdf');
+            echo $this->pegawai_model->get($id)->row()->nama;
         }
     }
     

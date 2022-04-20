@@ -10,6 +10,12 @@
 
                    
                     <!-- content below here -->
+
+                    <?php if ($message = $this->session->flashdata('alert')) {
+                    ?>
+                            <div class="alert alert-primary alert dismissable fade show"><?php echo $message; ?> <button class="close text-primary" data-dismiss="alert">&times;</button></div>
+                    <?php
+                    } ?>
                     
                     <div class="row d-flex justify-content-center">                            
                         <!-- Data pegawai -->

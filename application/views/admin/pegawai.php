@@ -25,8 +25,8 @@
                                         <th>#</th>
                                         <th>ID</th>
                                         <th>NIK</th>
-                                        <th>Username</th>
-                                        <th>Password</th>
+                                        <!-- <th>Username</th> -->
+                                        <!-- <th>Password</th> -->
                                         <th>Nama</th>
                                         <th>Jenis kelamin</th>
                                         <th>Jabatan</th>
@@ -47,15 +47,15 @@
                                         <td><?php echo $counter++; ?></td>
                                         <td><?php echo $p->id; ?></td>
                                         <td><?php echo $p->nik; ?></td>
-                                        <td><?php echo $p->username; ?></td>
-                                        <td><?php echo $p->password; ?></td>
+                                        <!-- <td><?php echo $p->username; ?></td> -->
+                                        <!-- <td><?php echo $p->password; ?></td> -->
                                         <td><?php echo ucwords($p->nama); ?></td>
                                         <td><?php echo ucwords($p->jenis_kelamin); ?></td>
                                         <td><?php echo ucwords($p->id_jabatan); ?></td>
                                         <td><?php echo ucwords($p->tanggal_masuk); ?></td>
                                         <td><?php echo ucwords($p->level_akses); ?></td>
                                         <td><?php echo ucwords($p->id_status); ?></td>
-                                        <td><?php echo ucwords($p->foto); ?></td>
+                                        <td><img width="50px" src="<?php echo base_url('img/pegawai/'.$p->id.".jpg") ?>"></td>
 
                                         <td class="text-center">
                                             <a class="btn btn-sm text-center btn-primary text-white" href="<?php echo base_url('pegawai/edit/').$p->id; ?>">

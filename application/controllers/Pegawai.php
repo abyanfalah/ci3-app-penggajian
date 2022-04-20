@@ -31,6 +31,8 @@
         public function tambah()
         {
             $data['title'] = 'pegawai baru';
+            $data['akses'] = $this->penggajian_model->get('akses')->result();
+            $data['jabatan'] = $this->penggajian_model->get('jabatan')->result();
 
             $this->load->view($this->access.'/_partials/header', $data);
             $this->load->view($this->access.'/_partials/sidebar');
@@ -44,6 +46,10 @@
 
             $data['title'] = 'edit pegawai '.$id;
             $data['pegawai'] = $this->pegawai_model->get($id)->row();
+            $data['akses'] = $this->penggajian_model->get('akses')->result();
+            $data['jabatan'] = $this->penggajian_model->get('jabatan')->result();
+            $data['status'] = $this->penggajian_model->get('status')->result();
+
 
             $this->load->view($this->access.'/_partials/header', $data);
             $this->load->view($this->access.'/_partials/sidebar');
@@ -55,7 +61,7 @@
         {
             if (!$id) { return redirect(base_url('pegawai')); }
 
-            $data['title'] = 'edit pegawai '.$id;
+            $data['title'] = 'hapus pegawai '.$id;
             $data['pegawai'] = $this->pegawai_model->get($id)->row();
 
             $this->load->view($this->access.'/_partials/header', $data);

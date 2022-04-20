@@ -8,8 +8,8 @@
             $this->load->model('jabatan_model');
             $this->load->library('form_validation');
             
-            $rules = $this->jabatan_model->rules();
-            $this->form_validation->set_rules($rules);
+            // $rules = $this->jabatan_model->rules();
+            // $this->form_validation->set_rules($rules);
 
         }
 
