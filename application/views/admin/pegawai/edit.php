@@ -16,6 +16,8 @@
 							<form method="post" action="<?php echo base_url('api/pegawai/update') ?>">
 								<h3>Edit informasi pegawai "<?php echo ucwords($pegawai->nama); ?>"</h3>
 
+								<input type="text" name="id" value="<?php echo $pegawai->id; ?>" hidden>
+
 								<!-- NIK -->
 								<div class="form-group">
 									<label for="nik">NIK</label>
@@ -32,7 +34,7 @@
 								<!-- USERNAME -->
 								<div class="form-group">
 									<label for="username">Username</label>
-									<input value="<?php echo $pegawai->username ?>" class="form-control" type="text" name="nama">
+									<input value="<?php echo $pegawai->username ?>" class="form-control" type="text" name="username">
 								</div>
 
 								<!-- <div class="form-group">
@@ -40,7 +42,7 @@
 									<input value="<?php echo $pegawai->password ?>" class="form-control" type="text" name="nama">
 								</div> -->
 
-									<!-- AKSES -->
+								<!-- AKSES -->
 								<div class="form-group">
 									<label for="level_akses">Level akses</label>
 									<select class="form-control" name="level_akses">
@@ -107,7 +109,7 @@
 									<select class="form-control" name="id_status">
 									<?php foreach ($status as $s): ?>
 										<option 
-											value="<?php $s->id ?>"
+											value="<?php echo $s->id ?>"
 											<?php echo ($pegawai->id_status == $s->id ? "selected" : null)?>
 											>
 												<?php echo ucwords($s->nama); ?>

@@ -49,10 +49,10 @@
 
         public function update()
         {
-            $old_id = $this->input->post('old_id');
-            if ($this->pegawai_model->update($old_id)) {
+            $id = $this->input->post('id');
+            if ($this->pegawai_model->update()) {
                 $status = 200;
-                $message = 'pegawai "'.$old_id.'" berhasil di-update';
+                $message = 'pegawai "'.$id.'" berhasil di-update';
             }else{
                 $status = 500;
                 $message = 'pegawai gagal di-update';
@@ -70,6 +70,8 @@
             $this->session->set_flashdata('msg', $message);
             echo json_encode($res);
             redirect(base_url('pegawai'));
+
+            // var_dump($this->input->post());
         }
 
 

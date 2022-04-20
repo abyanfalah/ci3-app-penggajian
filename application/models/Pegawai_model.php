@@ -33,7 +33,7 @@
 				'jenis_kelamin' => $this->input->post('jenis_kelamin'),
 				'tanggal_masuk' => $this->input->post('tanggal_masuk'),
 				'id_status' => 1,
-				'foto' => $this->input->post('nama').'jpg'
+				'foto' => $this->input->post('nama').'.jpg'
 			];
 
 			return $this->db->insert($this->table, $data);
@@ -51,7 +51,7 @@
 				'jenis_kelamin' => $this->input->post('jenis_kelamin'),
 				'tanggal_masuk' => $this->input->post('tanggal_masuk'),
 				'id_status' => $this->input->post('id_status'),
-				'foto' => $this->input->post('nama').'jpg'
+				'foto' => $this->input->post('nama').'.jpg'
 			];
 
 			return $this->db->update($this->table, $data, ["id" => $this->input->post('id')]);
