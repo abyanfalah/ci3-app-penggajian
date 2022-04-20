@@ -53,9 +53,13 @@
                                         <td><?php echo ucwords($p->jenis_kelamin); ?></td>
                                         <td><?php echo ucwords($p->id_jabatan); ?></td>
                                         <td><?php echo ucwords($p->tanggal_masuk); ?></td>
-                                        <td><?php echo ucwords($p->level_akses); ?></td>
-                                        <td><?php echo ucwords($p->id_status); ?></td>
-                                        <td><img width="50px" src="<?php echo base_url('img/pegawai/'.$p->id.".jpg") ?>"></td>
+                                        <td><?php echo ucwords($p->akses); ?></td>
+                                        <td>
+                                            <div class="badge">
+                                                <?php echo ucwords($p->status); ?>
+                                            </div>        
+                                        </td>
+                                        <td><img class="rounded-circle" width="50px" src="<?php echo base_url('img/pegawai/'.$p->id.".jpg") ?>"></td>
 
                                         <td class="text-center">
                                             <a class="btn btn-sm text-center btn-primary text-white" href="<?php echo base_url('pegawai/edit/').$p->id; ?>">

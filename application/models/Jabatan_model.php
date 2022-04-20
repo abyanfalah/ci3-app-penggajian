@@ -17,10 +17,10 @@
 		public function create()
 		{
 			$data = [
-				"id" => $this->new_id(),
-				"nama" => $this->input->post('nama'),
+				"id"         => $this->new_id(),
+				"nama"       => $this->input->post('nama'),
 				"gaji_pokok" => $this->input->post('gaji_pokok'),
-				"tunjangan" => $this->input->post('tunjangan')
+				"tunjangan"  => $this->input->post('tunjangan')
 			];
 
 			return $this->db->insert($this->table, $data);
@@ -31,10 +31,10 @@
 			if (! $id) return false;
 
 			$data = [
-				"id" => $this->sanitize($this->input->post('id')),
-				"nama" => $this->input->post('nama'),
+				"id"         => $this->sanitize($this->input->post('id')),
+				"nama"       => $this->input->post('nama'),
 				"gaji_pokok" => $this->input->post('gaji_pokok'),
-				"tunjangan" => $this->input->post('tunjangan')
+				"tunjangan"  => $this->input->post('tunjangan')
 			];
 
 			return $this->db->update($this->table, $data, ["id" => $id]);

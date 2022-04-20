@@ -20,7 +20,7 @@
         public function index()
         {
             $data['title'] = 'pegawai';
-            $data['pegawai'] = $this->penggajian_model->get('pegawai')->result();
+            $data['pegawai'] = $this->pegawai_model->get()->result();
 
             $this->load->view($this->access.'/_partials/header', $data);
             $this->load->view($this->access.'/_partials/sidebar');
