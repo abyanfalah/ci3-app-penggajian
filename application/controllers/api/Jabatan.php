@@ -18,11 +18,6 @@
      
         public function create()
         {
-
-            // if ($this->form_validation->run()) {
-            // }
-
-
             if ($this->jabatan_model->create()) {
                 $status = 201;
                 $message = 'Jabatan baru berhasil dibuat';

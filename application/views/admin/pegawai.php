@@ -69,7 +69,7 @@
                                                 <?php echo ucwords($p->status); ?>
                                             </div>        
                                         </td>
-                                        <td><img class="rounded-circle" width="50px" src="<?php echo base_url('img/pegawai/'.$p->id.".jpg") ?>"></td>
+                                        <td><img class="rounded-circle overflow-hidden" width="50px" height="50px" src="<?php echo base_url('img/pegawai/'.$p->id.".jpg") ?>"></td>
 
                                         <td class="text-center">
                                             <a class="btn btn-sm text-center btn-primary text-white" href="<?php echo base_url('pegawai/edit/').$p->id; ?>">

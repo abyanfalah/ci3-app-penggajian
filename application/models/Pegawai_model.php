@@ -40,9 +40,10 @@
 				'jenis_kelamin' => $this->input->post('jenis_kelamin'),
 				'tanggal_masuk' => $this->input->post('tanggal_masuk'),
 				'id_status'     => 1,
-				'foto'          => $this->input->post('nama').'.jpg'
+				// 'foto'          => $this->input->post('nama').'.jpg'
 			];
 
+			$this->picture_upload();
 			return $this->db->insert($this->table, $data);
 		}
 
@@ -96,6 +97,21 @@
 
 				return $new;
 			}
+		}
+
+		function picture_upload()
+		{
+			$config['upload_path']   = "./img/pegawai/";
+			$config['allowed_types'] = "jpg|png";
+			$config['file_name']     = $this->new_id();
+
+			$this->load->library('upload', $config);
+
+			if ($this->upload->do_upload('foto')) {
+				return true;
+			}
+
+			return false;
 		}
 
 
