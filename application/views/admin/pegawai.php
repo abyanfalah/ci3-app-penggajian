@@ -4,13 +4,23 @@
 
                     
                     <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <div class="d-sm-flex align-items-center justify-content-center mb-4">
+                        <?php 
+                            if ($msg = $this->session->flashdata('msg')) {
+                        ?>
+                            <div class="w-100 alert alert-primary fade show">
+                                <?php echo $msg; ?>
+                                <button class="close" data-dismiss="alert">&times;</button>
+                            </div>
+                        <?php
+                            }
 
+                        ?>
                     </div>
 
                    
                     <!-- content below here -->
-                    
+
                     <div class="row">
                         <div class="card p-3 col">
                             <div class="row">

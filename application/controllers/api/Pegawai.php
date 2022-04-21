@@ -25,10 +25,10 @@
 
             if ($this->pegawai_model->create()) {
                 $status = 201;
-                $message = 'pegawai baru berhasil dibuat';
+                $message = 'Pegawai baru berhasil dibuat';
             }else{
                 $status = 500;
-                $message = 'pegawai gagal dibuat';
+                $message = 'Pegawai gagal dibuat';
                 die(json_encode([
                     "status" => $status,
                     "message" => $message
@@ -52,10 +52,10 @@
             $id = $this->input->post('id');
             if ($this->pegawai_model->update()) {
                 $status = 200;
-                $message = 'pegawai "'.$id.'" berhasil di-update';
+                $message = 'Pegawai "'.$id.'" berhasil di-update';
             }else{
                 $status = 500;
-                $message = 'pegawai gagal di-update';
+                $message = 'Pegawai gagal di-update';
                 die(json_encode([
                     "status" => $status,
                     "message" => $message
@@ -81,10 +81,10 @@
 
             if ($this->pegawai_model->delete($id)) {
                 $status = 201;
-                $message = 'pegawai $id berhasil dihapus';
+                $message = 'Pegawai $id berhasil dihapus';
             }else{
                 $status = 500;
-                $message = 'pegawai $id gagal dihapus';
+                $message = 'Pegawai $id gagal dihapus';
                 die(json_encode([
                     "status" => $status,
                     "message" => $message

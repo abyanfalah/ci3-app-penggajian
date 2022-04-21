@@ -13,7 +13,7 @@
 					
 					<div class="row d-flex justify-content-center">
 						<div class="card col-8 p-5 shadow">
-							<form method="post" action="<?php echo base_url('api/pegawai/create') ?>">
+							<form method="post" action="<?php echo base_url('api/pegawai/create') ?>" enctype="multipart/form-data">
 								<h3>Informasi pegawai baru</h3>
 
 
@@ -80,6 +80,14 @@
 									<label for="tanggal_masuk">Tanggal masuk</label>
 									<input class="form-control" type="date" name="tanggal_masuk">
 								</div>
+
+								<!-- FOTO -->
+								<div class="form-group">
+									<label for="foto">Foto</label>
+									<input class="form-control-file" type="file" name="foto">
+								</div>
+
+
 
 								<!-- STATUS | pegawai baru aktif by default -->
 								<!-- <div class="form-group">
