@@ -7,26 +7,19 @@
             parent::__construct();
             $this->load->model('pegawai_model');
             $this->access = $this->session->userdata('akses');
+            // $this->load->helper('form');
+            $this->load->library('upload');
         }
 
         private $access;
 
         public function index($id = null)
         {
-            $this->load->view($this->access.'/_partials/header');
-            $this->load->view($this->access.'/_partials/sidebar');
-            $this->load->view('file');
-            $this->load->view($this->access.'/_partials/footer');
+           $this->load->view('file');
         }
 
         public function pegawai($id = null)
         {
-            // $this->load->view($this->access.'/_partials/header');
-            // $this->load->view($this->access.'/_partials/sidebar');
-            // $this->load->view('test',$data);
-            // $this->load->view($this->access.'/_partials/footer');
-
-            // var_dump($this->pegawai_model->get($id)->row_array());
             echo $this->pegawai_model->get($id)->row()->id;
             echo $this->pegawai_model->get($id)->row()->nama;
         }
